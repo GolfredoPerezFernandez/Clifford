@@ -276,10 +276,10 @@ export const InvolveHook = ({
     console.log("storage " + JSON.stringify(RX.Storage.getItem('pay')))
   }, [])
   return (<RX.View style={{ flex: 1, backgroundColor: '#1A2034' }} >
-    <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-start', marginTop: 50, marginLeft: 50 }]} >
+    <RX.Text style={[_styles.titleStyleBig, { alignSelf: 'flex-start', marginTop: 50, marginLeft: 50 }]} >
       {"Marketing"}
     </RX.Text>
-    <RX.View style={{ flex: 30, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start' }}>
+    <RX.View style={{ flex: 30, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center' }}>
 
       <RX.View style={{ position: 'relative', marginBottom: 30, height: 200, width: 300, justifyContent: 'center', alignItems: 'center', alignSelf: 'flex-start', }}>
 
