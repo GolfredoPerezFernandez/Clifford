@@ -81,6 +81,7 @@ const _styles = {
     viewContainer: RX.Styles.createViewStyle({
         flex: 1,
         alignSelf: 'stretch',
+        backgroundColor: '#1A2034',
         flexDirection: 'row',
     }),
     leftPanelContainer: RX.Styles.createViewStyle({

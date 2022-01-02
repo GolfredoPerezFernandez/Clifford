@@ -61,9 +61,12 @@ const _styles = {
     }),
     container: RX.Styles.createViewStyle({
         flex: 1,
+        padding: 20,
         alignSelf: 'stretch',
         justifyContent: "center",
         alignItems: "center",
+        margin: 30,
+        borderRadius: 14,
         backgroundColor: '#1F293D',
     }),
     addTodoButton: RX.Styles.createViewStyle({

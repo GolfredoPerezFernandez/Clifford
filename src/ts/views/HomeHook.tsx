@@ -269,10 +269,10 @@ export const HomeHook = ({
     console.log("storage " + JSON.stringify(RX.Storage.getItem('pay')))
   }, [])
   return (<RX.View style={{ flex: 1, backgroundColor: '#1A2034' }} >
-    <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-start', marginTop: 50, marginLeft: 50 }]} >
+    <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-start', marginTop: 50, marginLeft: 20 }]} >
       {"Dashboard"}
     </RX.Text>
-    <RX.View style={{ flex: 30, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+    <RX.View style={{ flex: 30, marginTop: 20, marginBottom: 10, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center' }}>
       <UI.Paper elevation={10} style={{ root: { justifyContent: "center", alignItems: "flex-end", borderRadius: 18, width: 350, backgroundColor: '#1F293D', height: 170 } }} >
 
         <RX.View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
@@ -358,7 +358,7 @@ export const HomeHook = ({
         </RX.View>
       </UI.Paper>
     </RX.View>
-    <RX.View style={{ flex: 70, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+    <RX.View style={{ flex: 70, alignSelf: 'stretch', marginTop: 20, flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
 
       <UI.Paper elevation={10} style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: 400, backgroundColor: '#1F293D', height: 300 } }} >
 
