@@ -284,9 +284,9 @@ export default class RootView extends ComponentBase<RootViewProps, RootViewState
             case NavModels.NavViewId.Partner:
                 return <PartnerHook isStackNav={this.state.isStackNav} len={this.state.lenguage} />;
             case NavModels.NavViewId.About:
-                return <AboutHook isStackNav={this.state.isStackNav} len={this.state.lenguage} />;
+                return <AboutHook isStackNav={this.state.isStackNav} len={this.state.lenguage} entries={[]} width={this.state.width} />;
             case NavModels.NavViewId.Involve:
-                return <InvolveHook isStackNav={this.state.isStackNav} len={this.state.lenguage} />;
+                return <InvolveHook isStackNav={this.state.isStackNav} len={this.state.lenguage} entries={[]} width={this.state.width} />;
             case NavModels.NavViewId.Road:
                 return <RoadHook isStackNav={this.state.isStackNav} len={this.state.lenguage} />;
             case NavModels.NavViewId.Partner:

@@ -117,7 +117,7 @@ export default class TodoCompositeView extends ComponentBase<TodoCompositeViewPr
     render(): JSX.Element | null {
         return (
             <RX.View style={_styles.viewContainer}>
-                <RX.View style={[_styles.leftPanelContainer, { width: 300 }]}>
+                <RX.View style={[_styles.leftPanelContainer, { width: 330 }]}>
                     <TodoListPanel2
                         len={this.props.lenguage}
                         showSideMenu={true}
@@ -185,11 +185,11 @@ export default class TodoCompositeView extends ComponentBase<TodoCompositeViewPr
             );
         } else if (this.props.navContext.showAbout) {
             return (
-                <AboutHook isStackNav={this.props.isStackNav} len={this.props.lenguage} entries={[]} width={0} />
+                <AboutHook isStackNav={this.props.isStackNav} len={this.props.lenguage} entries={[]} width={this.props.width} />
             );
         } else if (this.props.navContext.showInvolve) {
             return (
-                <InvolveHook isStackNav={this.props.isStackNav} len={this.props.lenguage} entries={[]} width={0} />
+                <InvolveHook isStackNav={this.props.isStackNav} len={this.props.lenguage} entries={[]} width={this.props.width} />
             );
         } else if (this.props.navContext.showRoad) {
             return (

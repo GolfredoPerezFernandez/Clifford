@@ -122,7 +122,7 @@ export default class TodoListPanel4 extends ComponentBase<TodoListPanelProps, To
             <RX.View useSafeInsets={true} style={_styles.container}>
                 <RX.View style={_styles.todoListHeader}>
 
-                    <RX.Text style={[_styles.logoText2White, { alignSelf: 'flex-start', textAlign: "left", height: 27, minWidth: 250, marginTop: 0, marginBottom: 0, width: 300 }]}>
+                    <RX.Text style={[_styles.logoText2White, { alignSelf: 'flex-start', marginLeft: 20, textAlign: "left", height: 27, minWidth: 250, marginTop: 0, marginBottom: 0, width: 300 }]}>
                         {"Burns"}
                     </RX.Text>
 

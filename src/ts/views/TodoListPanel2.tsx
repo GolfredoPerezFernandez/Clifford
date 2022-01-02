@@ -35,7 +35,7 @@ interface TodoListPanelState {
     searchString: string;
 }
 
-const _listItemHeight = 44;
+const _listItemHeight = 60;
 
 const _styles = {
     listScroll: RX.Styles.createViewStyle({

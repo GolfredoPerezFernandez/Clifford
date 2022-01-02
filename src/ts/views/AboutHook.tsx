@@ -281,119 +281,151 @@ export const AboutHook = ({
     <RX.Text style={[_styles.titleStyleBig, { alignSelf: 'flex-start', marginTop: 50, marginLeft: 50 }]} >
       {"Burns"}
     </RX.Text>
-    <RX.View style={{ flex: 30, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-      <UI.Paper elevation={10} style={{ root: { justifyContent: "flex-start", alignItems: "flex-start", borderRadius: 18, width: 270, backgroundColor: '#1F293D', height: 110 } }} >
+    <RX.View style={{ flex: 30, marginTop: 15, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
+      <RX.View style={{ position: 'relative', marginBottom: 30, height: 200, width: 300, justifyContent: 'center', alignItems: 'center', alignSelf: 'flex-start', }}>
 
-        <RX.View style={{ flexDirection: 'row', marginLeft: 10, justifyContent: 'center', alignItems: 'center', }}>
-          <RX.View >
-            <UI.Paper style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: 50, backgroundColor: 'white', marginRight: 20, height: 50 } }} >
+        <UI.Paper elevation={10} style={{ root: { elevation: 0, position: 'absolute', justifyContent: "center", alignItems: "flex-end", borderRadius: 18, width: 280, backgroundColor: '#1F293D', height: 150 } }} >
 
-              <FaBalanceScale color={'#1F293D'} style={{ width: 18, height: 18 }} />
+          <RX.View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
 
-            </UI.Paper>
+            <RX.View>
+              <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 0 }]} >
+                {"Total $CLIFF Burned"}
+              </RX.Text>
+
+              <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
+                {"$152,638,151,416"}
+              </RX.Text></RX.View>
           </RX.View>
-          <RX.View>
-            <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 10 }]} >
-              {"Total $CLIFF Burned"}
+          <RX.View style={{ width: 260, opacity: 0.5, alignSelf: 'center', height: 1, marginBottom: 15, backgroundColor: 'white' }} />
+          <RX.View style={{ flexDirection: 'row', marginLeft: 20, alignSelf: 'flex-start' }}>
+            <RX.Text style={[_styles.titleStyle5verde, { marginRight: 10 }]} >
+              {"+315,093,251"}
             </RX.Text>
-
-            <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
-              {"$152,318,954,184"}
-            </RX.Text></RX.View>
-        </RX.View>
-        <RX.View style={{ flexDirection: 'row', marginLeft: 20, alignSelf: 'flex-start' }}>
-          <RX.Text style={[_styles.titleStyle5rojo, { marginRight: 10 }]} >
-            {"+3,721,152"}
-          </RX.Text>
-          <RX.Text style={[_styles.titleStyle5, {}]} >
-            {"Burned Today"}
-          </RX.Text>
-        </RX.View>
-      </UI.Paper>
-      <UI.Paper elevation={10} style={{ root: { justifyContent: "flex-start", marginLeft: 20, marginRight: 20, alignItems: "flex-start", borderRadius: 18, width: 270, backgroundColor: '#1F293D', height: 110 } }} >
-
-        <RX.View style={{ marginLeft: 20, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <RX.View >
-            <UI.Paper style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: 50, backgroundColor: '#F99426', marginRight: 20, height: 50 } }} >
-              <GiBurningEmbers color={'white'} style={{ width: 18, height: 18 }} />
-
-            </UI.Paper>
-          </RX.View>
-          <RX.View>
-            <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 10 }]} >
-              {"Total $USD Burned"}
-            </RX.Text>
-
-            <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
-              {"$112,714,029.46"}
-            </RX.Text></RX.View>
-        </RX.View>
-        <RX.View style={{ flexDirection: 'row', marginLeft: 20, alignSelf: 'flex-start' }}>
-          <RX.Text style={[_styles.titleStyle5naranja, { marginRight: 10 }]} >
-            {"15.23%"}
-          </RX.Text>
-          <RX.Text style={[_styles.titleStyle5, {}]} >
-            {"($CLIFF) Burned"}
-          </RX.Text>
-        </RX.View>
-      </UI.Paper>  <UI.Paper elevation={10} style={{ root: { justifyContent: "flex-start", alignItems: "flex-start", borderRadius: 18, width: 270, backgroundColor: '#1F293D', height: 110 } }} >
-
-        <RX.View style={{ marginLeft: 20, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <RX.View >
-            <UI.Paper style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: 50, backgroundColor: 'green', marginRight: 20, height: 50 } }} >
-
-              <AiOutlineNumber color={'white'} style={{ width: 18, height: 18 }} />
-
-            </UI.Paper>
-          </RX.View>
-          <RX.View>
-            <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 10 }]} >
-              {"Number of Burns"}
-            </RX.Text>
-
-            <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
-              {"201"}
-            </RX.Text></RX.View>
-        </RX.View>
-        <RX.View style={{ flexDirection: 'row', marginLeft: 20, alignSelf: 'flex-start' }}>
-          <RX.Text style={[_styles.titleStyle5rojo, { marginRight: 10 }]} >
-            {""}
-          </RX.Text>
-          <RX.Text style={[_styles.titleStyle5, {}]} >
-            {""}
-          </RX.Text>
-        </RX.View>
-      </UI.Paper>  <UI.Paper elevation={10} style={{ root: { marginLeft: 20, marginRight: 20, justifyContent: "flex-start", alignItems: "flex-start", borderRadius: 18, width: 270, backgroundColor: '#1F293D', height: 110 } }} >
-
-        <RX.View style={{ marginLeft: 20, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <RX.View >
-            <UI.Paper style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: 50, backgroundColor: '#E60929', marginRight: 20, height: 50 } }} >
-              <MdAttachMoney color={'white'} style={{ width: 18, height: 18 }} />
-
-            </UI.Paper>
-          </RX.View>
-          <RX.View>
-            <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 10 }]} >
-              {"Average Burn (BUSD)"}
-            </RX.Text>
-
-            <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
-              {"$91,307.79"}
+            <RX.Text style={[_styles.titleStyle5, {}]} >
+              {"Burned Today"}
             </RX.Text>
           </RX.View>
-        </RX.View>    <RX.View style={{ flexDirection: 'row', marginLeft: 20, alignSelf: 'flex-start' }}>
-          <RX.Text style={[_styles.titleStyle5rojo, { marginRight: 10 }]} >
-            {""}
-          </RX.Text>
-          <RX.Text style={[_styles.titleStyle5, {}]} >
-            {""}
-          </RX.Text>
+        </UI.Paper>
+        <RX.View style={{ position: 'absolute', marginRight: 180, marginBottom: 130, }}>
+          <UI.Paper style={{ root: { elevation: 1, justifyContent: "center", alignItems: "center", borderRadius: 14, width: 65, backgroundColor: '#303950', marginLeft: 0, height: 65 } }} >
+
+            <FaBalanceScale color={'white'} style={{ width: 24, height: 24 }} />
+
+          </UI.Paper>
+
         </RX.View>
-      </UI.Paper>
+
+      </RX.View>
+      <RX.View style={{ position: 'relative', marginBottom: 30, height: 200, width: 300, justifyContent: 'center', alignItems: 'center', alignSelf: 'flex-start', }}>
+
+        <UI.Paper elevation={10} style={{ root: { elevation: 0, position: 'absolute', justifyContent: "center", alignItems: "flex-end", borderRadius: 18, width: 280, backgroundColor: '#1F293D', height: 150 } }} >
+
+          <RX.View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
+
+            <RX.View>
+              <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 0 }]} >
+                {"Total $USD Burned"}
+              </RX.Text>
+
+              <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
+                {"$18,670,775.00"}
+              </RX.Text></RX.View>
+          </RX.View>
+          <RX.View style={{ width: 260, opacity: 0.5, alignSelf: 'center', height: 1, marginBottom: 15, backgroundColor: 'white' }} />
+          <RX.View style={{ flexDirection: 'row', marginLeft: 20, alignSelf: 'flex-start' }}>
+            <RX.Text style={[_styles.titleStyle5naranja, { marginRight: 10 }]} >
+              {"15.26%"}
+            </RX.Text>
+            <RX.Text style={[_styles.titleStyle5, {}]} >
+              {" ($CLIFF) Burned"}
+            </RX.Text>
+          </RX.View>
+        </UI.Paper>
+        <RX.View style={{ position: 'absolute', marginRight: 180, marginBottom: 130, }}>
+          <UI.Paper style={{ root: { elevation: 1, justifyContent: "center", alignItems: "center", borderRadius: 14, width: 65, backgroundColor: '#F98E21', marginLeft: 0, height: 65 } }} >
+
+            <GiBurningEmbers color={'white'} style={{ width: 24, height: 24 }} />
+
+          </UI.Paper>
+
+        </RX.View>
+
+      </RX.View>
+      <RX.View style={{ position: 'relative', marginBottom: 30, height: 200, width: 300, justifyContent: 'center', alignItems: 'center', alignSelf: 'flex-start', }}>
+
+        <UI.Paper elevation={10} style={{ root: { elevation: 0, position: 'absolute', justifyContent: "center", alignItems: "flex-end", borderRadius: 18, width: 280, backgroundColor: '#1F293D', height: 150 } }} >
+
+          <RX.View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
+
+            <RX.View>
+              <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 0 }]} >
+                {"Number of Burns"}
+              </RX.Text>
+
+              <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
+                {"201"}
+              </RX.Text></RX.View>
+          </RX.View>
+          <RX.View style={{ width: 260, opacity: 0.5, alignSelf: 'center', height: 1, marginBottom: 15, backgroundColor: 'white' }} />
+          <RX.View style={{ flexDirection: 'row', marginLeft: 20, alignSelf: 'flex-start' }}>
+            <RX.Text style={[_styles.titleStyle5verde, { marginRight: 10 }]} >
+              {"  "}
+            </RX.Text>
+            <RX.Text style={[_styles.titleStyle5, {}]} >
+              {"  "}
+            </RX.Text>
+          </RX.View>
+        </UI.Paper>
+        <RX.View style={{ position: 'absolute', marginRight: 180, marginBottom: 130, }}>
+          <UI.Paper style={{ root: { elevation: 1, justifyContent: "center", alignItems: "center", borderRadius: 14, width: 65, backgroundColor: 'green', marginLeft: 0, height: 65 } }} >
+
+            <AiOutlineNumber color={'white'} style={{ width: 24, height: 24 }} />
+
+          </UI.Paper>
+
+        </RX.View>
+
+      </RX.View>
+      <RX.View style={{ position: 'relative', marginBottom: 30, height: 200, width: 300, justifyContent: 'center', alignItems: 'center', alignSelf: 'flex-start', }}>
+
+        <UI.Paper elevation={10} style={{ root: { elevation: 0, position: 'absolute', justifyContent: "center", alignItems: "flex-end", borderRadius: 18, width: 280, backgroundColor: '#1F293D', height: 150 } }} >
+
+          <RX.View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
+
+            <RX.View>
+              <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 0 }]} >
+                {"Average Burn (BUSD)"}
+              </RX.Text>
+
+              <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
+                {"$91,307.79"}
+              </RX.Text></RX.View>
+          </RX.View>
+          <RX.View style={{ width: 260, opacity: 0.5, alignSelf: 'center', height: 1, marginBottom: 15, backgroundColor: 'white' }} />
+          <RX.View style={{ flexDirection: 'row', marginLeft: 20, alignSelf: 'flex-start' }}>
+            <RX.Text style={[_styles.titleStyle5verde, { marginRight: 10 }]} >
+              {"  "}
+            </RX.Text>
+            <RX.Text style={[_styles.titleStyle5, {}]} >
+              {"  "}
+            </RX.Text>
+          </RX.View>
+        </UI.Paper>
+        <RX.View style={{ position: 'absolute', marginRight: 180, marginBottom: 130, }}>
+          <UI.Paper style={{ root: { elevation: 1, justifyContent: "center", alignItems: "center", borderRadius: 14, width: 65, backgroundColor: 'red', marginLeft: 0, height: 65 } }} >
+
+            <MdAttachMoney color={'white'} style={{ width: 24, height: 24 }} />
+
+          </UI.Paper>
+
+        </RX.View>
+
+      </RX.View>
     </RX.View>
     <RX.View style={{ flex: 70, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
 
-      <UI.Paper elevation={10} style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: 900, backgroundColor: '#1F293D', height: 350 } }} >
+      <UI.Paper elevation={10} style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: width - 400, backgroundColor: '#1F293D', height: 350 } }} >
         <TodoListPanel4
           selectedTodoId={""}
           onSelect={_onSelectTodo} onCreateNew={_onSelectTodo2} />

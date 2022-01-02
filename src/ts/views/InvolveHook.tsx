@@ -24,9 +24,16 @@ const _styles = {
     color: 'black',
     alignSelf: 'center'
   }),
-  titleStyle: RX.Styles.createTextStyle({
+  titleStyleBig: RX.Styles.createTextStyle({
     font: Fonts.displayBold,
     fontSize: 28,
+    textAlign: 'right',
+    color: 'white',
+    alignSelf: 'center'
+  }),
+  titleStyle: RX.Styles.createTextStyle({
+    font: Fonts.displayBold,
+    fontSize: 18,
     textAlign: 'right',
     color: 'white',
     alignSelf: 'center'
@@ -61,7 +68,7 @@ const _styles = {
   }),
   titleStyle5: RX.Styles.createTextStyle({
     font: Fonts.displayRegular,
-    fontSize: 16,
+    fontSize: 14,
     textAlign: "right",
     color: 'white',
     alignSelf: 'center'
@@ -272,51 +279,84 @@ export const InvolveHook = ({
     <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-start', marginTop: 50, marginLeft: 50 }]} >
       {"Marketing"}
     </RX.Text>
-    <RX.View style={{ flex: 30, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-      <UI.Paper elevation={10} style={{ root: { justifyContent: "center", alignItems: "flex-start", paddingLeft: 30, borderRadius: 18, width: 350, backgroundColor: '#1F293D', height: 170 } }} >
+    <RX.View style={{ flex: 30, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start' }}>
 
-        <RX.View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <RX.View >
-            <UI.Paper style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: 80, backgroundColor: 'green', marginRight: 20, height: 80 } }} >
+      <RX.View style={{ position: 'relative', marginBottom: 30, height: 200, width: 300, justifyContent: 'center', alignItems: 'center', alignSelf: 'flex-start', }}>
 
-              <AiOutlineNumber color={'white'} style={{ width: 24, height: 24 }} />
+        <UI.Paper elevation={10} style={{ root: { elevation: 0, position: 'absolute', justifyContent: "center", alignItems: "flex-end", borderRadius: 18, width: 280, backgroundColor: '#1F293D', height: 150 } }} >
 
-            </UI.Paper>
+          <RX.View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
+
+            <RX.View>
+              <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 0 }]} >
+                {"Number of Assets"}
+              </RX.Text>
+
+              <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
+                {"6"}
+              </RX.Text></RX.View>
           </RX.View>
-          <RX.View>
-            <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 10 }]} >
-              {"Number of Assets"}
+          <RX.View style={{ width: 260, opacity: 0.5, alignSelf: 'center', height: 1, marginBottom: 15, backgroundColor: 'white' }} />
+          <RX.View style={{ flexDirection: 'row', marginLeft: 20, alignSelf: 'flex-start' }}>
+            <RX.Text style={[_styles.titleStyle5verde, { marginRight: 10 }]} >
+              {"  "}
             </RX.Text>
-
-            <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
-              {"6"}
-            </RX.Text></RX.View>
-        </RX.View>
-      </UI.Paper>
-      <UI.Paper elevation={10} style={{ root: { marginLeft: 20, justifyContent: "center", alignItems: "flex-start", paddingLeft: 30, borderRadius: 18, width: 350, backgroundColor: '#1F293D', height: 170 } }} >
-
-        <RX.View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <RX.View >
-            <UI.Paper style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: 80, backgroundColor: '#E60929', marginRight: 20, height: 80 } }} >
-
-              <MdAttachMoney color={'white'} style={{ width: 24, height: 24 }} />
-
-            </UI.Paper>
+            <RX.Text style={[_styles.titleStyle5, {}]} >
+              {"  "}
+            </RX.Text>
           </RX.View>
-          <RX.View>
-            <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 10 }]} >
-              {"Marketing Wallet($USD)"}
-            </RX.Text>
+        </UI.Paper>
+        <RX.View style={{ position: 'absolute', marginRight: 180, marginBottom: 130, }}>
+          <UI.Paper style={{ root: { elevation: 1, justifyContent: "center", alignItems: "center", borderRadius: 14, width: 65, backgroundColor: 'green', marginLeft: 0, height: 65 } }} >
 
-            <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
-              {"$9,795,796.55"}
-            </RX.Text></RX.View>
+            <AiOutlineNumber color={'white'} style={{ width: 24, height: 24 }} />
+
+          </UI.Paper>
+
         </RX.View>
-      </UI.Paper>
+
+      </RX.View>
+      <RX.View style={{ position: 'relative', marginBottom: 30, height: 200, width: 300, justifyContent: 'center', alignItems: 'center', alignSelf: 'flex-start', }}>
+
+        <UI.Paper elevation={10} style={{ root: { elevation: 0, position: 'absolute', justifyContent: "center", alignItems: "flex-end", borderRadius: 18, width: 280, backgroundColor: '#1F293D', height: 150 } }} >
+
+          <RX.View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
+
+            <RX.View>
+              <RX.Text style={[_styles.titleStyle5, { alignSelf: 'flex-end', marginRight: 20, marginTop: 10, marginBottom: 0, width: 200, height: 40 }]} >
+                {"Marketing Wallet ($USD)"}
+              </RX.Text>
+
+              <RX.Text style={[_styles.titleStyle, { alignSelf: 'flex-end', marginRight: 20, marginBottom: 10 }]} >
+                {"$9,755,867.79"}
+              </RX.Text></RX.View>
+          </RX.View>
+          <RX.View style={{ width: 260, opacity: 0.5, alignSelf: 'center', height: 1, marginBottom: 15, backgroundColor: 'white' }} />
+          <RX.View style={{ flexDirection: 'row', marginLeft: 20, alignSelf: 'flex-start' }}>
+            <RX.Text style={[_styles.titleStyle5verde, { marginRight: 10 }]} >
+              {"  "}
+            </RX.Text>
+            <RX.Text style={[_styles.titleStyle5, {}]} >
+              {"  "}
+            </RX.Text>
+          </RX.View>
+        </UI.Paper>
+        <RX.View style={{ position: 'absolute', marginRight: 180, marginBottom: 130, }}>
+          <UI.Paper style={{ root: { elevation: 1, justifyContent: "center", alignItems: "center", borderRadius: 14, width: 65, backgroundColor: 'red', marginLeft: 0, height: 65 } }} >
+
+            <MdAttachMoney color={'white'} style={{ width: 24, height: 24 }} />
+
+          </UI.Paper>
+
+        </RX.View>
+
+      </RX.View>
+
+
     </RX.View>
     <RX.View style={{ flex: 70, alignSelf: 'stretch', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
 
-      <UI.Paper elevation={10} style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: 900, backgroundColor: '#1F293D', height: 350 } }} >
+      <UI.Paper elevation={10} style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 18, width: width - 400, backgroundColor: '#1F293D', height: 350 } }} >
         <TodoListPanel5
           selectedTodoId={""}
           onSelect={_onSelectTodo} onCreateNew={_onSelectTodo2} />
@@ -362,4 +402,5 @@ import { useEffect } from 'react';
 import TodoListPanel4 from './TodoListPanel4';
 import NavContextStore from '../stores/NavContextStore';
 import TodoListPanel5 from './TodoListPanel5';
+import { FaBalanceScale } from '@react-icons/all-files/fa/FaBalanceScale';
 
