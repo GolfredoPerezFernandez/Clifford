@@ -66,6 +66,8 @@
         "yargs": "^15.4.0"
     },
     "dependencies": {
+        "@nivo/bar": "^0.78.0",
+        "@nivo/core": "^0.78.0",
         "@progress/kendo-react-conversational-ui": "^4.8.0",
         "@react-icons/all-files": "^4.1.0",
         "@sproutch/ui": "0.0.4-beta.25",

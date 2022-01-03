@@ -215,6 +215,7 @@ ChartJS.register(
   LineElement
 );
 
+import { ResponsiveBar } from '@nivo/bar'
 
 export const HomeHook = ({
   entries,
@@ -229,14 +230,16 @@ export const HomeHook = ({
 }) => {
 
   const options2 = {
+
+    borderRadius: 4,
     plugins: {
       title: {
         display: false,
 
         text: 'Chart.js Bar Chart - Stacked',
       },
-
       legend: {
+        fontColor: "white",
         display: false,
       },
 
@@ -244,6 +247,35 @@ export const HomeHook = ({
 
   };
   const options = {
+    scales: {
+      x: {
+        grid: {
+          color: 'white',
+          borderDash: [5, 5],
+          borderColor: 'white',
+          tickColor: 'white',
+          borderWidth: 0.1
+        },
+        barPercentage: 0.7,
+        ticks: {
+          color: 'white',
+          padding: 10,
+        }
+      },
+      y: {
+        grid: {
+          color: 'white',
+          borderDash: [5, 5],
+          borderColor: 'white',
+          tickColor: 'white',
+          borderWidth: 0.1
+        },
+        ticks: {
+          color: 'white',
+          padding: 10,
+        }
+      }
+    },
     plugins: {
       title: {
         display: false,
@@ -262,11 +294,16 @@ export const HomeHook = ({
 
   const data = {
     labels,
-
     datasets: [
 
       {
+
+        barPercentage: 0.5,
+
+        maxBarThickness: 8,
         label: 'Dataset 1',
+        borderRadius: 14,
+        color: 'white',
         data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
         backgroundColor: 'white',
       }
@@ -393,7 +430,7 @@ export const HomeHook = ({
 
         <RX.View style={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center', }}>
           <RX.View >
-            <UI.Paper style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 8, width: 380, backgroundColor: '#1F293D', height: 200 } }} >
+            <UI.Paper style={{ root: { justifyContent: "center", alignItems: "center", borderRadius: 8, width: 380, backgroundColor: '#F98E21', height: 200 } }} >
 
               <Bar options={options} data={data} />
             </UI.Paper>
